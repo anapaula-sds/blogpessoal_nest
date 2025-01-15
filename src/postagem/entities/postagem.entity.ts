@@ -5,7 +5,9 @@ import {
   PrimaryGeneratedColumn,
   Column,
   UpdateDateColumn,
+  ManyToOne,
 } from 'typeorm';
+import { Tema } from '../../tema/entities/tema.entity';
 
 @Entity({ name: 'tb_postagens' }) //CREATE TABLE tb_postagens();
 export class Postagem {
@@ -25,4 +27,11 @@ export class Postagem {
 
   @UpdateDateColumn()
   data: Date;
+
+  @ManyToOne(() => Tema, (tema) => tema.postagem,{
+    onDelete: "CASCADE"
+
+  })
+
+  tema: Tema
 }
