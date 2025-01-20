@@ -3,6 +3,7 @@ import { InjectRepository } from "@nestjs/typeorm";
 import { DeleteResult, ILike, Repository } from "typeorm";
 import { TemaService } from "../../tema/services/tema.service";
 import { Postagem } from "../entities/postagem.entity";
+import { Usuario } from "../../usuario/entities/usuario.entity";
 
 @Injectable()
 export class PostagemService {
