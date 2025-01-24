@@ -105,8 +105,8 @@ describe('Teste dos Modulos Usuario e Auth (e2e)', () => {
       });
   });
 
-  // Teste 06: Mostrar os detalhes de um usuário específico
-  it("06- Deve Mostrar os Detalhes de um Usuário Específico", async () => {
+  // Teste 06: Deve Mostrar os Usuarios por Id
+  it("06- Deve Mostrar os Usuarios por Id", async () => {
     return await request(app.getHttpServer())
       .get(`/usuarios/${usuarioId}`) // Endpoint para buscar usuário pelo ID
       .set("Authorization", `${token}`) // Inclui o token no cabeçalho
