@@ -8,6 +8,7 @@ import { ApiProperty } from "@nestjs/swagger"
 export class Usuario {
 
     @PrimaryGeneratedColumn() 
+    @ApiProperty()
     id: number
 
     @Transform(({ value }: TransformFnParams) => value?.trim())
