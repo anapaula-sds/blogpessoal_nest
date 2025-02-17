@@ -9,7 +9,7 @@ async function bootstrap() {
   const config = new DocumentBuilder()
   .setTitle('Blog Pessoal')
   .setDescription('Projeto Blog Pessoal')
-  .setContact("Ana Paula Santana da SIlva","https://github.com/anapaula-sds","anapaula-sds@hotmail.com")
+  .setContact("Ana Paula Santana da Slva","https://github.com/anapaula-sds","anapaula-sds@hotmail.com")
   .setVersion('1.0')
   .addBearerAuth()
   .build();
